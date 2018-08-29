@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import './normalize.css'
+import './style.min.css'
+import './styles.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,13 +29,16 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <link rel="stylesheet" type="text/css" href="./normalize.css" />
-          <link rel="stylesheet" type="text/css" href="./style.min.css" />
-          <link rel="stylesheet" type="text/css" href="./styles.css" />
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
+        <main className="wrapper">
+          <Header siteTitle={data.site.siteMetadata.title} />
+
+          <section className="content">{children}</section>
+          <div className="footer">
+            <section className="container">© 2018 pdpcid</section>
+          </div>
+        </main>
       </>
     )}
   />

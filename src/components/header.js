@@ -3,19 +3,27 @@ import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
   <div>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
-        >
+    <nav className="navigation">
+      <section className="container">
+        <Link to="/" className="navigation-title">
           {siteTitle}
         </Link>
-      </h1>
-    </div>
+        <ul className="navigation-list float-right">
+          <li>
+            <Link to="/">Tentang</Link>
+          </li>
+          <li>
+            <Link to="/kode">Kode Etik</Link>
+          </li>
+          <li>
+            <a href="#">Forum Diskusi</a>
+          </li>
+          <li>
+            <Link to="/indexPodcast">Indeks</Link>
+          </li>
+        </ul>
+      </section>
+    </nav>
   </div>
 )
 
