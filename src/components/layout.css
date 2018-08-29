@@ -1,10 +1,12 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Fira Code',monospace;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
+  color: #323232;
+  background-color: #fefefe;
 }
 article,
 aside,
@@ -183,9 +185,10 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em "Fira Code", monospace;
   box-sizing: border-box;
   overflow-y: scroll;
+  max-width: 90%;
 }
 * {
   box-sizing: inherit;
@@ -198,7 +201,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Fira Code", monospace;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
