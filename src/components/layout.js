@@ -25,8 +25,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Product & Development Podcast Community (PDPC) adalah komunitas yang terdiri dari para penyiar podcast yang murni membahas seputar produk dan pengembangannya' },
+            { name: 'keywords', content: 'komunitas, developer, podcast' },
           ]}
         >
           <html lang="en" />
